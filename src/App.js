@@ -2,6 +2,7 @@ import './App.css';
 import styled from "styled-components";
 import backgroundImage from "./background/background02.jpg";
 import Main from "./pages/main";
+import Tools from "./pages/tools";
 
 const S = styled.span`
   color: navajowhite;
@@ -52,7 +53,7 @@ function App() {
             <BG01/>
             <Title><S>Size</S> Checker@</Title>
             <Box>
-                <Main/>
+                <Tools/>
                 <Subtitle>made by Jeonhui & Gyeongrok</Subtitle>
             </Box>
         </div>
