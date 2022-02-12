@@ -1,0 +1,85 @@
+{
+  "man": [
+    { "international": "XS",
+      "korea": "90(S)",
+      "USA": "85-90",
+      "japan": "S",
+      "UK": "0",
+      "france": "40",
+      "Europe": "44-46"
+    },
+    { "international": "S",
+      "korea": "95(M)",
+      "USA": "90-95",
+      "japan": "M",
+      "UK": "1",
+      "france": "42, 44",
+      "Europe": "46"
+    },
+
+    { "international": "M",
+      "korea": "100(L)",
+      "USA": "95-100",
+      "japan": "L",
+      "UK": "2",
+      "france": "46, 48",
+      "Europe": "48"
+    },
+    { "international": "L",
+      "korea": "105(XL)",
+      "USA": "100-105",
+      "japan": "LL,XL",
+      "UK": "3",
+      "france": "50, 52",
+      "Europe": "50"
+    },
+    { "international": "XL",
+      "korea": "110(2XL)",
+      "USA": "105- 110",
+      "japan": "-",
+      "UK": "4",
+      "france": "54, 56, 58",
+      "Europe": "52"
+    },
+    { "international": "XXL",
+      "korea": "115(3XL)",
+      "USA": "110+",
+      "japan": "-",
+      "UK": "5",
+      "france": "60, 62",
+      "Europe": "54"
+    }
+  ],
+  "woman": [
+    {
+      "international": "XS",
+      "korea": "44(85)",
+      "japan": "S"
+    },
+    {
+      "international": "S",
+      "korea": "55(90)",
+      "japan": "M"
+    },
+    {
+      "international": "M",
+      "korea": "66(95)",
+      "japan": "L"
+    },
+    {
+      "international": "L",
+      "korea": "77(100)",
+      "japan": "XL"
+    },
+    {
+      "international": "XL",
+      "korea": "88(105)",
+      "japan": "XXL"
+    },
+    {
+      "international": "XXL",
+      "korea": "(110)",
+      "japan": "-"
+    }
+  ]
+}
