@@ -1,0 +1,35 @@
+#mainInputs {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    width: 250px;
+    padding: .8em .5em;
+    border: 2px solid #3e3e3e;
+    font-family: inherit;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input {
+    width: 250px;
+    background-image: linear-gradient(#000, #000);
+    background-position: bottom 5px center;
+    background-size: calc(100% - 10px) 2px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.subText {
+    font-size: 3rem;
+    margin: auto 32px;
+}
