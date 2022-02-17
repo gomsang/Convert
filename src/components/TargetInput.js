@@ -6,6 +6,9 @@ function TargetInput() {
     const [kind, setKind] = useState("")
     const kinds = ["shoe-US(man)", "shoe-US(woman)", "shoe-JP", "shoe-EU(man)", "shoe-EU(woman)", "shoe-UK(man)", "shoe-UK(woman)"];
 
+    window.addEventListener("resize",(e)=>{
+        console.log(window.innerWidth)
+    })
 
     return (
         <div id={"mainInputs"}>
