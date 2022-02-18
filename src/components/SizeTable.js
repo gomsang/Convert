@@ -1,8 +1,9 @@
+import "./SizeTable.css"
 import kinds from "../datas/kind_clothes.json";
 
 function SizeTable() {
 
-    return <div>
+    return <div id={"contents"}>
         <table>
             <thead>
             <tr>
