@@ -1,0 +1,461 @@
+{
+  "name": "clothes",
+  "ranks" : 15,
+  "data": {
+    "ko": {
+      "name": "Korea Size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "220"
+        },
+        {
+          "rank": 1,
+          "name": "225"
+        },
+        {
+          "rank": 2,
+          "name": "230"
+        },
+        {
+          "rank": 3,
+          "name": "235"
+        },
+        {
+          "rank": 4,
+          "name": "240"
+        },
+        {
+          "rank": 5,
+          "name": "245"
+        },
+        {
+          "rank": 6,
+          "name": "250"
+        },
+        {
+          "rank": 7,
+          "name": "255"
+        },
+        {
+          "rank": 8,
+          "name": "260"
+        },
+        {
+          "rank": 9,
+          "name": "265"
+        },
+        {
+          "rank": 10,
+          "name": "270"
+        },
+        {
+          "rank": 11,
+          "name": "275"
+        },
+        {
+          "rank": 12,
+          "name": "280"
+        },
+        {
+          "rank": 13,
+          "name": "285"
+        },
+        {
+          "rank": 14,
+          "name": "290"
+        }
+      ]
+    },
+    "us_man": {
+      "name": "United States (man)",
+      "data": [
+        {
+          "rank": 0,
+          "name": "-"
+        },
+        {
+          "rank": 1,
+          "name": "-"
+        },
+        {
+          "rank": 2,
+          "name": "-"
+        },
+        {
+          "rank": 3,
+          "name": "-"
+        },
+        {
+          "rank": 4,
+          "name": "6"
+        },
+        {
+          "rank": 5,
+          "name": "6.5"
+        },
+        {
+          "rank": 6,
+          "name": "7"
+        },
+        {
+          "rank": 7,
+          "name": "7.5"
+        },
+        {
+          "rank": 8,
+          "name": "8"
+        },
+        {
+          "rank": 9,
+          "name": "8.5"
+        },
+        {
+          "rank": 10,
+          "name": "9"
+        },
+        {
+          "rank": 11,
+          "name": "9.5"
+        },
+        {
+          "rank": 12,
+          "name": "10"
+        },
+        {
+          "rank": 13,
+          "name": "10.5"
+        },
+        {
+          "rank": 14,
+          "name": "11"
+        }
+      ]
+    },
+    "us_woman": {
+      "name": "United States (woman)",
+      "data": [
+        {
+          "rank": 0,
+          "name": "5"
+        },
+        {
+          "rank": 1,
+          "name": "5.5"
+        },
+        {
+          "rank": 2,
+          "name": "6"
+        },
+        {
+          "rank": 3,
+          "name": "6.5"
+        },
+        {
+          "rank": 4,
+          "name": "7"
+        },
+        {
+          "rank": 5,
+          "name": "7.5"
+        },
+        {
+          "rank": 6,
+          "name": "8"
+        },
+        {
+          "rank": 7,
+          "name": "8.5"
+        },
+        {
+          "rank": 8,
+          "name": "9"
+        },
+        {
+          "rank": 9,
+          "name": "9.5"
+        },
+        {
+          "rank": 10,
+          "name": "10"
+        },
+        {
+          "rank": 11,
+          "name": "-"
+        },
+        {
+          "rank": 12,
+          "name": "-"
+        },
+        {
+          "rank": 13,
+          "name": "-"
+        },
+        {
+          "rank": 14,
+          "name": "-"
+        }
+      ]
+    },
+    "eu_man": {
+      "name": "Europe (man)",
+      "data": [
+        {
+          "rank": 0,
+          "name": "-"
+        },
+        {
+          "rank": 1,
+          "name": "-"
+        },
+        {
+          "rank": 2,
+          "name": "-"
+        },
+        {
+          "rank": 3,
+          "name": "-"
+        },
+        {
+          "rank": 4,
+          "name": "38.5"
+        },
+        {
+          "rank": 5,
+          "name": "39"
+        },
+        {
+          "rank": 6,
+          "name": "40"
+        },
+        {
+          "rank": 7,
+          "name": "40.5"
+        },
+        {
+          "rank": 8,
+          "name": "41"
+        },
+        {
+          "rank": 9,
+          "name": "42"
+        },
+        {
+          "rank": 10,
+          "name": "42.5"
+        },
+        {
+          "rank": 11,
+          "name": "43"
+        },
+        {
+          "rank": 12,
+          "name": "43.5"
+        },
+        {
+          "rank": 13,
+          "name": "44"
+        },
+        {
+          "rank": 14,
+          "name": "44.5"
+        }
+      ]
+    },
+    "eu_woman": {
+      "name": "Europe (woman)",
+      "data": [
+        {
+          "rank": 0,
+          "name": "36"
+        },
+        {
+          "rank": 1,
+          "name": "36.5"
+        },
+        {
+          "rank": 2,
+          "name": "37"
+        },
+        {
+          "rank": 3,
+          "name": "37.5"
+        },
+        {
+          "rank": 4,
+          "name": "38"
+        },
+        {
+          "rank": 5,
+          "name": "38.5"
+        },
+        {
+          "rank": 6,
+          "name": "39"
+        },
+        {
+          "rank": 7,
+          "name": "39.5"
+        },
+        {
+          "rank": 8,
+          "name": "40"
+        },
+        {
+          "rank": 9,
+          "name": "40.5"
+        },
+        {
+          "rank": 10,
+          "name": "41"
+        },
+        {
+          "rank": 11,
+          "name": "-"
+        },
+        {
+          "rank": 12,
+          "name": "-"
+        },
+        {
+          "rank": 13,
+          "name": "-"
+        },
+        {
+          "rank": 14,
+          "name": "-"
+        }
+      ]
+    },
+    "uk_man": {
+      "name": "United Kingdom (man)",
+      "data": [
+        {
+          "rank": 0,
+          "name": "-"
+        },
+        {
+          "rank": 1,
+          "name": "-"
+        },
+        {
+          "rank": 2,
+          "name": "-"
+        },
+        {
+          "rank": 3,
+          "name": "-"
+        },
+        {
+          "rank": 4,
+          "name": "5.5"
+        },
+        {
+          "rank": 5,
+          "name": "6"
+        },
+        {
+          "rank": 6,
+          "name": "6.5"
+        },
+        {
+          "rank": 7,
+          "name": "7"
+        },
+        {
+          "rank": 8,
+          "name": "7.5"
+        },
+        {
+          "rank": 9,
+          "name": "8"
+        },
+        {
+          "rank": 10,
+          "name": "8.5"
+        },
+        {
+          "rank": 11,
+          "name": "9"
+        },
+        {
+          "rank": 12,
+          "name": "9.5"
+        },
+        {
+          "rank": 13,
+          "name": "10"
+        },
+        {
+          "rank": 14,
+          "name": "10.5"
+        }
+      ]
+    },
+    "uk_woman": {
+      "name": "United Kingdom (woman)",
+      "data": [
+        {
+          "rank": 0,
+          "name": "2.5"
+        },
+        {
+          "rank": 1,
+          "name": "3"
+        },
+        {
+          "rank": 2,
+          "name": "3.5"
+        },
+        {
+          "rank": 3,
+          "name": "4"
+        },
+        {
+          "rank": 4,
+          "name": "4.5"
+        },
+        {
+          "rank": 5,
+          "name": "5"
+        },
+        {
+          "rank": 6,
+          "name": "5.5"
+        },
+        {
+          "rank": 7,
+          "name": "6"
+        },
+        {
+          "rank": 8,
+          "name": "6.5"
+        },
+        {
+          "rank": 9,
+          "name": "7"
+        },
+        {
+          "rank": 10,
+          "name": "7.5"
+        },
+        {
+          "rank": 11,
+          "name": "-"
+        },
+        {
+          "rank": 12,
+          "name": "-"
+        },
+        {
+          "rank": 13,
+          "name": "-"
+        },
+        {
+          "rank": 14,
+          "name": "-"
+        }
+      ]
+    }
+  }
+}
