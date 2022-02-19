@@ -1,0 +1,7 @@
+#queryResultListItem {
+    width: 420px;
+    border: black solid 3px;
+    padding: 12px;
+}
+
+h1, h2 { margin:0 }
