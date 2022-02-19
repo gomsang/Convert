@@ -1,0 +1,208 @@
+{
+  "name": "clothes_women",
+  "rank": 6,
+  "data": {
+    "ko": {
+      "name": "Korea Size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "44(85)"
+        },
+        {
+          "rank": 1,
+          "name": "55(90)"
+        },
+        {
+          "rank": 2,
+          "name": "66(95)"
+        },
+        {
+          "rank": 3,
+          "name": "77(100)"
+        },
+        {
+          "rank": 4,
+          "name": "88(105)"
+        },
+        {
+          "rank": 5,
+          "name": "(110)"
+        }
+      ]
+    },
+    "international": {
+      "name": "international_size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "XS"
+        },
+        {
+          "rank": 1,
+          "name": "S"
+        },
+        {
+          "rank": 2,
+          "name": "M"
+        },
+        {
+          "rank": 3,
+          "name": "L"
+        },
+        {
+          "rank": 4,
+          "name": "XL"
+        },
+        {
+          "rank": 5,
+          "name": "2XL"
+        }
+      ]
+    },
+    "us": {
+      "name": "United States Size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "2"
+        },
+        {
+          "rank": 1,
+          "name": "4"
+        },
+        {
+          "rank": 2,
+          "name": "6"
+        },
+        {
+          "rank": 3,
+          "name": "8"
+        },
+        {
+          "rank": 4,
+          "name": "10"
+        },
+        {
+          "rank": 5,
+          "name": "12"
+        }
+      ]
+    },
+    "japan": {
+      "name": "Japan Size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "44"
+        },
+        {
+          "rank": 1,
+          "name": "55"
+        },
+        {
+          "rank": 2,
+          "name": "66"
+        },
+        {
+          "rank": 3,
+          "name": "77"
+        },
+        {
+          "rank": 4,
+          "name": "88"
+        },
+        {
+          "rank": 5,
+          "name": "-"
+        }
+      ]
+    },
+    "uk": {
+      "name": "United Kingdom Size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "4-6"
+        },
+        {
+          "rank": 1,
+          "name": "8-10"
+        },
+        {
+          "rank": 2,
+          "name": "10-12"
+        },
+        {
+          "rank": 3,
+          "name": "16-18"
+        },
+        {
+          "rank": 4,
+          "name": "20-22"
+        },
+        {
+          "rank": 5,
+          "name": "-"
+        }
+      ]
+    },"france": {
+      "name": "France Size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "34"
+        },
+        {
+          "rank": 1,
+          "name": "36"
+        },
+        {
+          "rank": 2,
+          "name": "38"
+        },
+        {
+          "rank": 3,
+          "name": "40, 42"
+        },
+        {
+          "rank": 4,
+          "name": "44, 46, 48"
+        },
+        {
+          "rank": 5,
+          "name": "50, 52, 54"
+        }
+      ]
+    },
+    "eu": {
+      "name": "Europe Size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "34"
+        },
+        {
+          "rank": 1,
+          "name": "36"
+        },
+        {
+          "rank": 2,
+          "name": "38"
+        },
+        {
+          "rank": 3,
+          "name": "40, 42"
+        },
+        {
+          "rank": 4,
+          "name": "44, 46, 48"
+        },
+        {
+          "rank": 5,
+          "name": "50, 52, 54"
+        }
+      ]
+    }
+  }
+}

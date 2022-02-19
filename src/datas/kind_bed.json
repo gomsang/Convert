@@ -1,0 +1,81 @@
+{
+  "name":"bed",
+  "ranks": 5,
+  "data": {
+    "type": {
+      "name": "Type",
+      "data": [
+        {
+          "rank": 0,
+          "name": "S"
+        },
+        {
+          "rank": 1,
+          "name": "SS"
+        },
+        {
+          "rank": 2,
+          "name": "D"
+        },
+        {
+          "rank": 3,
+          "name": "Q"
+        },
+        {
+          "rank": 4,
+          "name": "K"
+        }
+      ]
+    },
+    "ko_type": {
+      "name": "Kroean Type Name",
+      "data": [
+        {
+          "rank": 0,
+          "name": "싱글"
+        },
+        {
+          "rank": 1,
+          "name": "슈퍼 싱글"
+        },
+        {
+          "rank": 2,
+          "name": "더블"
+        },
+        {
+          "rank": 3,
+          "name": "퀸"
+        },
+        {
+          "rank": 4,
+          "name": "킹"
+        }
+      ]
+    },
+    "size": {
+      "name": "Size",
+      "data": [
+        {
+          "rank": 0,
+          "name": "100 X 200 X 23"
+        },
+        {
+          "rank": 1,
+          "name": "110 X 200 X 23"
+        },
+        {
+          "rank": 2,
+          "name": "135 X 200 X 23"
+        },
+        {
+          "rank": 3,
+          "name": "150 X 200 X 23"
+        },
+        {
+          "rank": 4,
+          "name": "160 X 200 X 23"
+        }
+      ]
+    }
+  }
+}
