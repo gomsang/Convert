@@ -1,8 +1,12 @@
-#mainInputs {
+#centerLayout {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#queryList {
+    list-style: none;
 }
 
 input {
