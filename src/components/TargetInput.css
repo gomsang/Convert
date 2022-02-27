@@ -1,12 +1,21 @@
 #centerLayout {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 50%;
+    top:20%;
+    transform: translate(-50%,0);
+    text-align: center;
 }
 
 #queryList {
     list-style: none;
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#queryList ol {
+    padding: 0;
+    text-align: left;
 }
 
 input {

@@ -1,6 +1,6 @@
 {
   "name": "clothes",
-  "rank": 6,
+  "ranks": 6,
   "data": {
     "ko": {
       "name": "Korea Size",

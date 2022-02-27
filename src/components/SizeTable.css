@@ -1,6 +1,18 @@
 #contents {
-    padding-top: 64px;
-    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*가운데 위치하도록*/
+
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    /*테이블 표시(사라졌다가 생겼다가 할 수 있도록 함)*/
+
     justify-content: center;
     text-align: center;
+
+
+
 }
