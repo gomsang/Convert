@@ -1,5 +1,5 @@
 import "./SizeTable.css"
-import kinds from "../datas/kind_shoes.json";
+import kinds from "../datas/kind_clothes.json";
 
 function SizeTable() {
     return <div id={"contents"}>
@@ -7,7 +7,7 @@ function SizeTable() {
             <thead>
             <tr>
                 {
-                    Object.keys(kinds.data).map((kind, idx) => <th key={idx}>{kind}</th>)
+                    Object.values(kinds.data).map((kind, idx) => <th key={idx}>{kind.name}</th>)
                 }
             </tr>
             </thead>
