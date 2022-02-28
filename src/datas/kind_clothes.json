@@ -3,7 +3,7 @@
   "ranks": 6,
   "data": {
     "ko": {
-      "name": "Korea Size",
+      "name": "Korea",
       "data": [
         {
           "rank": 0,
@@ -32,7 +32,7 @@
       ]
     },
     "international": {
-      "name": "international_size",
+      "name": "International",
       "data": [
         {
           "rank": 0,
@@ -61,7 +61,7 @@
       ]
     },
     "us": {
-      "name": "United States Size",
+      "name": "United States",
       "data": [
         {
           "rank": 0,
@@ -90,7 +90,7 @@
       ]
     },
     "japan": {
-      "name": "Japan Size",
+      "name": "Japan",
       "data": [
         {
           "rank": 0,
@@ -119,7 +119,7 @@
       ]
     },
     "uk": {
-      "name": "United Kingdom Size",
+      "name": "United Kingdom",
       "data": [
         {
           "rank": 0,
@@ -147,7 +147,7 @@
         }
       ]
     },"france": {
-      "name": "France Size",
+      "name": "France",
       "data": [
         {
           "rank": 0,
@@ -176,7 +176,7 @@
       ]
     },
     "eu": {
-      "name": "Europe Size",
+      "name": "Europe",
       "data": [
         {
           "rank": 0,
