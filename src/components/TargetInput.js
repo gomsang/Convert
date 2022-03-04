@@ -1,5 +1,5 @@
 import "./TargetInput.css";
-import queryKindByName from "../utils/Size"
+import {querySizeByName} from "../utils/size/Size"
 import React, {useState} from "react";
 import QueryResultListItem from "./QueryResultListItem";
 
@@ -10,7 +10,7 @@ function TargetInput() {
 
     const onChangeInput = (e) => {
         setSearchText(e.target.value)
-        setQueryResult(queryKindByName(e.target.value))
+        setQueryResult(querySizeByName(e.target.value))
     }
 
     return (
