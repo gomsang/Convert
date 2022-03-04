@@ -1,38 +1,38 @@
 {
-  "name": "clothes_women",
+  "id": "clothes",
   "ranks": 6,
   "data": {
     "ko": {
-      "name": "Korea Size",
+      "name": "Korea",
       "data": [
         {
           "rank": 0,
-          "name": "44(85)"
+          "name": "85(XS)"
         },
         {
           "rank": 1,
-          "name": "55(90)"
+          "name": "90(S)"
         },
         {
           "rank": 2,
-          "name": "66(95)"
+          "name": "95(M)"
         },
         {
           "rank": 3,
-          "name": "77(100)"
+          "name": "100(L)"
         },
         {
           "rank": 4,
-          "name": "88(105)"
+          "name": "105(XL)"
         },
         {
           "rank": 5,
-          "name": "(110)"
+          "name": "110(2XL)"
         }
       ]
     },
     "international": {
-      "name": "international_size",
+      "name": "International",
       "data": [
         {
           "rank": 0,
@@ -61,56 +61,56 @@
       ]
     },
     "us": {
-      "name": "United States Size",
+      "name": "United States",
       "data": [
         {
           "rank": 0,
-          "name": "2"
+          "name": "85-90"
         },
         {
           "rank": 1,
-          "name": "4"
+          "name": "90-95"
         },
         {
           "rank": 2,
-          "name": "6"
+          "name": "95-100"
         },
         {
           "rank": 3,
-          "name": "8"
+          "name": "100-105"
         },
         {
           "rank": 4,
-          "name": "10"
+          "name": "105-110"
         },
         {
           "rank": 5,
-          "name": "12"
+          "name": "110-"
         }
       ]
     },
     "japan": {
-      "name": "Japan Size",
+      "name": "Japan",
       "data": [
         {
           "rank": 0,
-          "name": "44"
+          "name": "S"
         },
         {
           "rank": 1,
-          "name": "55"
+          "name": "M"
         },
         {
           "rank": 2,
-          "name": "66"
+          "name": "L"
         },
         {
           "rank": 3,
-          "name": "77"
+          "name": "LL, XL"
         },
         {
           "rank": 4,
-          "name": "88"
+          "name": "-"
         },
         {
           "rank": 5,
@@ -119,88 +119,88 @@
       ]
     },
     "uk": {
-      "name": "United Kingdom Size",
+      "name": "United Kingdom",
       "data": [
         {
           "rank": 0,
-          "name": "4-6"
+          "name": "0"
         },
         {
           "rank": 1,
-          "name": "8-10"
+          "name": "1"
         },
         {
           "rank": 2,
-          "name": "10-12"
+          "name": "2"
         },
         {
           "rank": 3,
-          "name": "16-18"
+          "name": "3"
         },
         {
           "rank": 4,
-          "name": "20-22"
+          "name": "4"
         },
         {
           "rank": 5,
-          "name": "-"
+          "name": "5"
         }
       ]
     },"france": {
-      "name": "France Size",
+      "name": "France",
       "data": [
         {
           "rank": 0,
-          "name": "34"
+          "name": "40"
         },
         {
           "rank": 1,
-          "name": "36"
+          "name": "42, 44"
         },
         {
           "rank": 2,
-          "name": "38"
+          "name": "46, 48"
         },
         {
           "rank": 3,
-          "name": "40, 42"
+          "name": "50, 52"
         },
         {
           "rank": 4,
-          "name": "44, 46, 48"
+          "name": "54, 56, 58"
         },
         {
           "rank": 5,
-          "name": "50, 52, 54"
+          "name": "60, 62"
         }
       ]
     },
     "eu": {
-      "name": "Europe Size",
+      "name": "Europe",
       "data": [
         {
           "rank": 0,
-          "name": "34"
+          "name": "44-46"
         },
         {
           "rank": 1,
-          "name": "36"
+          "name": "46"
         },
         {
           "rank": 2,
-          "name": "38"
+          "name": "48"
         },
         {
           "rank": 3,
-          "name": "40, 42"
+          "name": "50"
         },
         {
           "rank": 4,
-          "name": "44, 46, 48"
+          "name": "52"
         },
         {
           "rank": 5,
-          "name": "50, 52, 54"
+          "name": "54"
         }
       ]
     }

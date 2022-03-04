@@ -1,5 +1,5 @@
 import "./SizeTable.css"
-import kinds from "../datas/kind_clothes.json";
+import kinds from "../utils/size/sources/kind_clothes.json";
 
 function SizeTable() {
     return <div id={"contents"}>
