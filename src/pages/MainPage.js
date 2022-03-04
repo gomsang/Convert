@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import ConvertPage from "./ConvertPage";
-import "../pages/MainPage.css";
+import "./ConvertPage.css";
 
 function MainPage() {
     return (<div className={"main"}>
