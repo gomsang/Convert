@@ -1,20 +1,29 @@
 .header {
-    display: inline-block;
     position: absolute;
-    align-items: center;
-    left: 64px;
-    top: 32px;
-
+    height: 400px;
+    background-color: rgb(40,70,150);
+    width: 100%;
 }
 
 .title {
+    /* 기본 설정 */
+    position: absolute;
     margin: 0;
-    font-size: 2.5rem;
+    color: white;
     font-weight: bold;
+
+    /* 데스크탑 설정 */
+    left: 80px;
+    top: 40px;
+    font-size: 2rem;
+
 }
 
 @media  all and (max-width: 768px){
+    /* 모바일 설정 */
     .title {
+        left: 20px;
+        top: 20px;
         font-size: 1.5rem;
     }
 }

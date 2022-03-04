@@ -1,6 +1,8 @@
 import TargetInput from "../components/TargetInput";
 import SizeTable from "../components/SizeTable";
+import Convert from "../components/Convert";
 import {useEffect, useState} from "react";
+
 
 function ConvertPage() {
     const [showTable, setShowTable] = useState(false);
@@ -18,9 +20,11 @@ function ConvertPage() {
         }
     } //테이블을 보여줄지 말지 작동하는 함수
 
-    return <div>
-        <TargetInput/>
-        <SizeTable/>
+    return <div className={"ConvertPage"}>
+        <Convert/>
+
+        {/*<TargetInput/>*/}
+        {/*<SizeTable/>*/}
         {/*<button onClick={() => {
             findTable()
         }} style={{
