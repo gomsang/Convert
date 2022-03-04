@@ -2,6 +2,7 @@ import TargetInput from "../components/TargetInput";
 import SizeTable from "../components/SizeTable";
 import Convert from "../components/Convert";
 import {useEffect, useState} from "react";
+import "./ConvertPage.css";
 
 
 function ConvertPage() {
@@ -22,7 +23,6 @@ function ConvertPage() {
 
     return <div className={"ConvertPage"}>
         <Convert/>
-
         {/*<TargetInput/>*/}
         {/*<SizeTable/>*/}
         {/*<button onClick={() => {

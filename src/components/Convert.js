@@ -1,4 +1,4 @@
-import "./Convert.css"
+import "./Convert.css";
 import {useState} from "react";
 
 export default function Convert() {
