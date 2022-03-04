@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import ConvertPage from "./ConvertPage";
+import ConvertPage from "./ConvertPage2";
 import "./MainPage.css";
 
 function MainPage() {
