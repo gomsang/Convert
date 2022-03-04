@@ -5,7 +5,7 @@ import QueryResultListItem from "./QueryResultListItem";
 
 
 function TargetInput() {
-    const [queryResult,setQueryResult] =useState([])
+    const [queryResult, setQueryResult] = useState([])
     const [searchText, setSearchText] = useState("")
 
     const onChangeInput = (e) => {
@@ -19,7 +19,9 @@ function TargetInput() {
                    maxLength="8" size="10"/>
 
             <ol id={"queryList"}>
-                {queryResult.map((result, idx) => <li key={idx}><button id={"search"+idx}><QueryResultListItem result={result}/></button></li>)}
+                {queryResult.map((result, idx) => <li key={idx}>
+                    <button id={"search" + idx}><QueryResultListItem result={result}/></button>
+                </li>)}
             </ol>
         </div>
     )
