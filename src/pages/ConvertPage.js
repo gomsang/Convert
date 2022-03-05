@@ -1,6 +1,6 @@
 import TargetInput from "../components/TargetInput";
 import SizeTable from "../components/SizeTable";
-import Convert from "../components/Convert2";
+import Convert from "../components/Convert";
 import {useEffect, useState} from "react";
 import "./ConvertPage.css";
 
