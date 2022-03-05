@@ -13,13 +13,15 @@
     width: 25%;
 }
 
-.InputBox input {
-    padding: 0;
+.InputClass{
+    padding: 0 0 0 10px;
     width: 100%;
     height: 50px;
     background: none;
     border: 2px solid rgb(200, 200, 200);
     border-radius: 5px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .letter {

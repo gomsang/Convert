@@ -16,6 +16,7 @@ function TargetInput() {
     return (
         <div id={"centerLayout"}>
             <input type="text" id="name" value={searchText} onChange={onChangeInput} required minLength="4"
+                   className={"InputClass"}
                    maxLength="8" size="10"/>
             <ol id={"queryList"}>
                 {queryResult.map((result, idx) => <li key={idx}>
