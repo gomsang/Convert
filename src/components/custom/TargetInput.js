@@ -1,44 +1,45 @@
-import "./ConvertPage.css"
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import {querySizeByName} from "../../utils/size/Size";
 import QueryResultListItem from "../QueryResultListItem";
+import "./TargetInput.css";
 
 export default function TargetInput() {
-    const [recommendCursor, setRecommendCursor] = useState(0)
-
     const [keyword, setKeyword] = useState("")
-
     const [queryResult, setQueryResult] = useState([])
+    let listRefs = []
+    const ref = useRef()
 
-    useEffect(() => {
-        setQueryResult(querySizeByName(keyword))
-        setRecommendCursor(0)
-    }, [keyword])
+    const onKeyDown = (e) => {
+        console.log(e.code);
+        if (e.code==="ArrowDown"){
 
-    const handleChange = (event) => {
-        setKeyword(event.target.value)
-    }
+        }
+        else if (e.code==="ArrowUp"){
 
-    const handleKey = (event) => {
-        if (event.key === "ArrowUp") {
-            setRecommendCursor(recommendCursor > 0 ? recommendCursor - 1 : 0)
-        } else if (event.key === "ArrowDown") {
-            setRecommendCursor(recommendCursor + 1)
-        } else if (event.key === "Enter"){
-            event.preventDefault()
+        }
+        else if(e.code==="Enter"){
+            console.log(listRefs[0].current);
         }
     }
 
+    useEffect(() => {
+        setQueryResult(querySizeByName(keyword));
+    }, [keyword])
+
+
     return <div className={"formLayout"}>
-        <div>
-            <form><input className={"field"} type={"text"} value={keyword} onKeyDown={handleKey}
-                         onChange={handleChange}/></form>
-            <ol id={"queryList"}>
-                {queryResult.map((result, idx) => <li key={idx}
-                                                      className={idx === (recommendCursor - 1) ? "selectedItem" : "notSelectedItem"}>
-                    <QueryResultListItem result={result}/>
-                </li>)}
-            </ol>
-        </div>
+        <input className={"field"} type={"text"} value={keyword} onChange={(e) => {
+            setKeyword(e.target.value)
+            listRefs.splice(0, listRefs.length);
+        }} onKeyDown={onKeyDown}/>
+        <ol id={"queryList"}>
+            {queryResult.map((result, idx) => {
+                    listRefs.push(ref);
+                    return (<li key={idx} ref={listRefs[idx]}>
+                        <QueryResultListItem result={result}/>
+                    </li>)
+                }
+            )}
+        </ol>
     </div>
 }

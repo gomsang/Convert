@@ -1,11 +1,12 @@
 import Header from "../components/Header";
-import ConvertPage from "./ConvertPage2";
+import ConvertPage from "./ConvertPage";
 import "./MainPage.css";
+import ConvertPage2 from "../components/custom/ConvertPage2";
 
 function MainPage() {
     return (<div className={"main"}>
         <Header/>
-        <ConvertPage/>
+        <ConvertPage2/>
     </div>)
 }
 
