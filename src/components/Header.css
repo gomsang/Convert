@@ -1,6 +1,6 @@
 .header {
     position: absolute;
-    height: 50%;
+    height: 70%;
     background:linear-gradient(120deg, rgb(50,100,150), rgb(60,40,150), rgb(0,10,60));
     width: 100%;
 }
