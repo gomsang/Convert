@@ -1,25 +1,19 @@
 .header {
     position: absolute;
-    height: 100%;
-    background:linear-gradient(120deg, rgb(50,100,150), rgb(60,40,150), rgb(0,10,60));
+    height: auto;
     width: 100%;
+    display: flex;
+    padding: 42px;
+    align-items: center;
 }
 
 .title {
-    /* 기본 설정 */
-    position: absolute;
-    margin: 0;
-    color: white;
+    color: black;
     font-weight: bold;
-
-    /* 데스크탑 설정 */
-    left: 40px;
-    top: 20px;
     font-size: 2rem;
-
 }
 
-@media  all and (max-width: 768px){
+@media all and (max-width: 768px) {
     /* 모바일 설정 */
     .title {
         left: 20px;
