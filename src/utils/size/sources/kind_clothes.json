@@ -3,7 +3,7 @@
   "ranks": 6,
   "data": {
     "ko": {
-      "name": "Korea",
+      "name": "Kor",
       "data": [
         {
           "rank": 0,
@@ -32,7 +32,7 @@
       ]
     },
     "international": {
-      "name": "International",
+      "name": "Intl.",
       "data": [
         {
           "rank": 0,
@@ -61,7 +61,7 @@
       ]
     },
     "us": {
-      "name": "United States",
+      "name": "US",
       "data": [
         {
           "rank": 0,
@@ -90,7 +90,7 @@
       ]
     },
     "japan": {
-      "name": "Japan",
+      "name": "JP",
       "data": [
         {
           "rank": 0,
@@ -119,7 +119,7 @@
       ]
     },
     "uk": {
-      "name": "United Kingdom",
+      "name": "UK",
       "data": [
         {
           "rank": 0,
@@ -176,7 +176,7 @@
       ]
     },
     "eu": {
-      "name": "Europe",
+      "name": "EU",
       "data": [
         {
           "rank": 0,

@@ -68,7 +68,7 @@
       ]
     },
     "us_man": {
-      "name": "United States (man)",
+      "name": "US (man)",
       "data": [
         {
           "rank": 0,
@@ -133,7 +133,7 @@
       ]
     },
     "us_woman": {
-      "name": "United States (woman)",
+      "name": "US (women)",
       "data": [
         {
           "rank": 0,
@@ -198,7 +198,7 @@
       ]
     },
     "eu_man": {
-      "name": "Europe (man)",
+      "name": "EU (man)",
       "data": [
         {
           "rank": 0,
@@ -263,7 +263,7 @@
       ]
     },
     "eu_woman": {
-      "name": "Europe (woman)",
+      "name": "EU (woman)",
       "data": [
         {
           "rank": 0,
@@ -328,7 +328,7 @@
       ]
     },
     "uk_man": {
-      "name": "United Kingdom (man)",
+      "name": "UK (man)",
       "data": [
         {
           "rank": 0,
@@ -393,7 +393,7 @@
       ]
     },
     "uk_woman": {
-      "name": "United Kingdom (woman)",
+      "name": "UK (woman)",
       "data": [
         {
           "rank": 0,

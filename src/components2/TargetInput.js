@@ -25,15 +25,12 @@ export default function TargetInput() {
                 inputRef.current.focus();
             }
         } else if (e.code === "Enter") {
-            console.log(recommendCursor);
             console.log(listRefs[recommendCursor].current);
-            console.log(listRefs);
         }
     }
 
     useEffect(() => {
         setQueryResult(querySizeByName(keyword));
-        console.log(typeof (ref))
     }, [keyword])
 
 
@@ -49,7 +46,9 @@ export default function TargetInput() {
             {queryResult.map((result, idx) => {
                     listRefs.push(_.cloneDeep(ref));
                     return (<li key={idx} ref={listRefs[idx]}
-                                className={idx === recommendCursor ? "selectedItem" : "notSelectedItem"}>
+                                className={idx === recommendCursor ? "selectedItem" : "notSelectedItem"}
+                        onMouseOver={(e)=>{console.log(e)}}
+                    >
                         <QueryResultListItem result={result}/>
                     </li>)
                 }

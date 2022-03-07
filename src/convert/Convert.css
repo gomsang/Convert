@@ -1,0 +1,65 @@
+.Convert {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(45, 50, 60, 10);
+}
+
+.InputContainer {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.InputBox{
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+
+.InputBox span{
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.InputBox input{
+    width: 100%;
+    height: 50px;
+    text-indent: 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.InputBox input:focus{
+    outline: none;
+}
+
+.ResultList {
+    position: absolute;
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.ResultList li{
+    width: 100%;
+    border-radius: 5px;
+}
