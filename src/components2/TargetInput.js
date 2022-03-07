@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import {querySizeByName} from "../utils/size/Size";
-import QueryResultListItem from "../components/QueryResultListItem";
+import QueryResultListItem from "./QueryResultListItem";
 import "./TargetInput.css";
 
 export default function TargetInput() {
@@ -43,7 +43,7 @@ export default function TargetInput() {
                    setKeyword(e.target.value);
                    listRefs.splice(0, listRefs.length);
                    setRecommendCursor(-1);
-               }} onKeyDown={onKeyDown}/>
+               }} onKeyDown={onKeyDown} onFocus={()=>{setRecommendCursor(-1)}}/>
 
         <ol id={"queryList"}>
             {queryResult.map((result, idx) => {

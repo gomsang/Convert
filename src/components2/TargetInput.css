@@ -13,14 +13,21 @@
     border-bottom: 2px solid black;
 }
 
-ol {
+#queryList{
     max-height: 200px;
-    overflow-y: auto;
-
+    overflow-y: scroll;
     list-style-type: none;
     padding: 0;
 }
 
+#queryList li {
+    border-radius: 10px;
+}
+
+
+.notSelectedItem{}
+
 .selectedItem{
-    background-color: slategrey;
+    background-color: black;
+    color: white;
 }

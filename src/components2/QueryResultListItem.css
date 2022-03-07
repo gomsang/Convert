@@ -1,0 +1,14 @@
+#queryResultListItem {
+    position: relative;
+}
+
+#queryResultListItem h1 {
+    display: inline-block;
+}
+
+#queryResultListItem h2 {
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    font-size: 0.8rem;
+}
