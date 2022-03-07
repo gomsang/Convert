@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
-import {querySizeByName} from "../../utils/size/Size";
-import QueryResultListItem from "../QueryResultListItem";
+import {querySizeByName} from "../utils/size/Size";
+import QueryResultListItem from "../components/QueryResultListItem";
 import "./TargetInput.css";
 
 export default function TargetInput() {
