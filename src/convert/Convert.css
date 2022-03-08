@@ -1,66 +1,71 @@
 .Convert {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     width: 80%;
-    height: 120px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(45, 50, 60, 10);
+    height: 50%;
+}
+
+.Container {
+    position: absolute;
+    display: flex;
+    top: 30%;
+    width: 100%;
+    justify-content: center;
+
 }
 
 .InputContainer {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-
-    width: 100%;
-    margin: 0;
-
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.InputBox{
     position: relative;
-    width: 25%;
-    height: 100%;
-}
-
-.InputBox span{
     display: inline-block;
-    padding: 0 5px 0 5px;
-    border-radius: 3px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.InputBox input{
-    width: 100%;
-    height: 50px;
-    text-indent: 10px;
-    border-radius: 5px;
-    font-size: 2rem;
-}
-
-.InputBox input:focus{
-    outline: none;
-}
-
-.ResultList {
-    position: absolute;
-    display: inline-block;
-    padding: 0;
-    list-style: none;
     margin: 0;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
+    border-bottom: 4px solid black;
+    width: 180px;
 }
 
-.ResultList li{
+.Input {
+    text-indent: 10px;
+    width: 180px;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0%);
+}
+
+.Kind{
+    position: absolute;
     width: 100%;
-    border-radius: 5px;
-    cursor: default;
+    margin-top:5px;
+    text-align: right;
+}
+
+.ResultList{
+    position: absolute;
+    list-style: none;
+    text-align: right;
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.ResultList li span{
+    font-size: 1.2rem;
+    border-radius: 3px;
+    padding: 0 3px 0 3px;
+    font-weight:300;
+}
+
+
+.selectedItem span{
+    background-color: black;
+    color: white;
+}
+
+.Arrow{
+    margin: 0 80px 0 80px;
 }

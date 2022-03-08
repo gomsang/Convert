@@ -3,14 +3,11 @@
     height: 100%;
 }
 
-#title {
+.title {
     position: absolute;
     left: 20px;
     top: 20px;
     color: black;
-    font-size: 3rem;
-    /*color: white;*/
-    /*background: linear-gradient(120deg, rgb(0, 0, 0), rgb(80, 80, 80) 40%, rgb(150, 150, 150) 80%);*/
-    /*-webkit-background-clip: text;*/
-    /*-webkit-text-fill-color: transparent;*/
+    font-size: 2rem;
+    font-weight: 600;
 }

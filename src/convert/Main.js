@@ -1,9 +1,9 @@
-// import Convert from "./convert";
-import Convert2 from "./convert2";
-import "./Main2.css";
+import Convert from "./convert";
+import "./Main.css";
 
 export default function Main() {
     return (<div className={"Main"}>
-        <Convert2/>
+        <h1 className={"title"}>CONVERT</h1>
+        <Convert/>
     </div>)
 }

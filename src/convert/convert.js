@@ -1,94 +1,87 @@
 import "./Convert.css";
-import {useState, useEffect, useRef} from "react";
+import {useState, useEffect} from "react";
 import {querySizeByName} from "../utils/size/Size";
-import QueryResultListItem from "./QueryResultListItem";
+import {value} from "lodash/seq";
 
 export default function Convert() {
-    const [keyword, setKeyword] = useState("");
-    const [kind, setKind] = useState("");
+    const [state, setState] = useState(0)
+    // 0 - 선택 가능 1 - 선택 중  2 - 선택 완료
+
     const [queryResult, setQueryResult] = useState([])
-    const [recommendCursor, setRecommendCursor] = useState(0)
-    const [state, setState] = useState(true);
-    let listRefs = []
-    const ref = useRef()
-    const inputRef = useRef();
-    const _ = require('lodash');
+    //query 결과 저장
 
+    let values = []
+    let kinds = []
+
+    const [keyword, setKeyword] = useState("")
+    const [kind, setKind] = useState("")
+    const [recommendCursor, setRecommendCursor] = useState(0) // 선택된 인덱스 저장
     const keywordChange = (e) => {
-        setKeyword(e.target.value);
-        listRefs.splice(0, listRefs.length);
-        setRecommendCursor(-1);
-        setKind("");
-        setState(true);
+        setKeyword(e.target.value)
+        setState(0)
+        values = []
+        kinds = []
     }
+    useEffect(() => {
+        if (state === 0) {
+            setQueryResult(querySizeByName(keyword));
+        }
+    }, [keyword, state])
 
-    const onKeyDown = (e) => {
-        if (e.code === "ArrowDown") {
-            if (listRefs.length !== 0 && (listRefs.length - 1) > recommendCursor) {
-                setRecommendCursor(recommendCursor + 1);
-            }
-        } else if (e.code === "ArrowUp") {
-            if (listRefs.length !== 0 && 0 < recommendCursor) {
-                setRecommendCursor(recommendCursor - 1);
-            } else if (recommendCursor === 0) {
-                setRecommendCursor(-1);
-                inputRef.current.focus();
-            }
-        } else if (e.code === "Enter") {
-            if (recommendCursor !== -1) {
-                let find = listRefs[recommendCursor].current.innerText.split("\n")
-                setKeyword(find[0]);
-                setKind(find[1]);
-                setState(false);
+    const keyDown = (e) => {
+        if (values.length !== 0) {
+            if (e.code === "ArrowUp") {
+                choose((recommendCursor - 1) < 0 ? values.length - 1 : recommendCursor - 1)
+            } else if (e.code === "ArrowDown") {
+                choose((recommendCursor + 1) < values.length ? recommendCursor + 1 : 0)
+            } else if (e.code === "Enter") {
+                pick()
             }
         }
     }
 
-    useEffect(() => {
-        setQueryResult(querySizeByName(keyword));
-    }, [keyword])
-
+    const choose = (idx) => {
+        setRecommendCursor(idx)
+        setKeyword(values[idx])
+        setState(1)
+    }
+    const pick = () => {
+        setKind(kinds[recommendCursor])
+        setState(2)
+        setRecommendCursor(-1)
+    }
 
     return (<div className={"Convert"}>
-        <div className={"InputContainer"}>
-            <div className={"InputBox"}>
-                <span style={{borderBottom: "orange 3px solid"}}>Search</span>
-                <input type={"text"} value={keyword} ref={inputRef} onChange={keywordChange}
-                       onKeyDown={onKeyDown} onFocus={() => {
-                    setRecommendCursor(-1)
-                }}/>
+        <div className={"Container"}>
+            <div className={"InputContainer"}>
 
+                <input className={"Input"} placeholder={"값 입력"}
+                       value={keyword} style={state < 2 ? {color: "dimgray"} : {color: "black"}}
+                       onChange={keywordChange} onKeyDown={keyDown}
+                />
+                {state === 2 ? <div className={"Kind"}>{kind}</div> : ""}
                 <ol className={"ResultList"}>
-                    {state ? queryResult.map((result, idx) => {
-                            listRefs.push(_.cloneDeep(ref));
-                            return (<li key={idx} ref={listRefs[idx]}
-                                        className={idx === recommendCursor ? "selectedItem" : "notSelectedItem"}
-                                        onMouseOver={(e) => {
-                                            setRecommendCursor(idx);
+                    {state < 2 ? queryResult.map((result, idx) => {
+                            values.push(result.name);
+                            kinds.push(result.kind + " | " + result.region)
+                            return (<li key={idx} className={idx === recommendCursor ? "selectedItem" : "notSelectedItem"}
+                                        onMouseOver={() => {
+                                            choose(idx)
                                         }}
-                                        onClick={() => {
-                                            let find = listRefs[recommendCursor].current.innerText.split("\n")
-                                            setKeyword(find[0]);
-                                            setKind(find[1]);
-                                            setState(false);
-                                        }}
-                            >
-                                <QueryResultListItem result={result}/>
+                                        onClick={pick}
+                            ><span>{result.kind + " | " + result.region}</span>
                             </li>)
                         }
                     ) : ""}
                 </ol>
-            </div>
 
-            <div className={"InputBox"}>
-                <span style={{borderBottom: "cornflowerblue 3px solid"}}>From</span>
-                <input disabled value={kind} style={{fontSize: "1.2rem"}}/>
             </div>
-
-            <div className={"InputBox"}><span style={{borderBottom: "green 3px solid"}}>To</span>
-                <input/>
-            </div>
-
+            {state ===2?<div className={"Arrow"}>=></div>:""}
+            {state === 2 ?
+                <div className={"InputContainer"}>
+                    <input className={"Input"} value={"kind"} disabled/>
+                </div> : ""
+            }
         </div>
     </div>)
 }
