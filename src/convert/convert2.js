@@ -8,6 +8,7 @@ export default function Convert() {
     const [queryResult, setQueryResult] = useState([]) //query 결과 저장
     const [recommendCursor, setRecommendCursor] = useState(0) // 선택된 인덱스 저장
     const [state, setState] = useState(true); //결과 선택 state
+    const [kind, setKind] = useState("");
     let listRefs = [] //query list 주소 저장하는 배열
     const ref = useRef() // 주소 불러오기 위한 변수
     const inputRef = useRef(); //input 주소
@@ -39,7 +40,7 @@ export default function Convert() {
             if (recommendCursor !== -1) {
                 let find = listRefs[recommendCursor].current.innerText.split("\n")
                 setKeyword(find[0]);
-                /*find[1]이 위 정보 */
+                setKind(find[1]);
                 setState(false);
                 // 엔터 누르면 선택됨으로 설정
             }
@@ -48,45 +49,52 @@ export default function Convert() {
 
     useEffect(() => {
         setQueryResult(querySizeByName(keyword));
+        // query 결과 찾기
     }, [keyword])
 
 
     return (<div className={"Convert"}>
-        <div className={"InputContainer"}>
-            <div className={"InputBox"}>
-                <span style={{borderBottom: "orange 3px solid"}}>From</span>
-                <input type={"text"} value={keyword} ref={inputRef} onChange={keywordChange}
-                       onKeyDown={onKeyDown} onFocus={() => {
-                    setRecommendCursor(-1);
-                }}/>
+        <div className={"Container"}>
+            <div className={"InputContainer"}>
+                <div className={"Title"}>Convert</div>
+                <div className={"InputBox"}>
+                    <span style={{borderBottom: "orange 3px solid"}}>From</span>
 
-                <ol className={"ResultList"}>
-                    {state ? queryResult.map((result, idx) => {
-                            listRefs.push(_.cloneDeep(ref));
-                            return (<li key={idx} ref={listRefs[idx]}
-                                        className={idx === recommendCursor ? "selectedItem" : "notSelectedItem"}
-                                        onMouseOver={(e) => {
-                                            setRecommendCursor(idx);
-                                        }}
-                                        onClick={() => {
-                                            let find = listRefs[recommendCursor].current.innerText.split("\n")
-                                            setKeyword(find[0]);
-                                            /* find[1] 지정할 거면 여기도 해야함 */
-                                            setState(false);
-                                        }}
-                            >
-                                <QueryResultListItem result={result}/>
-                            </li>)
-                        }
-                    ) : ""}
-                </ol>
+                    <input type={"text"} value={keyword} ref={inputRef} onChange={keywordChange}
+                           onKeyDown={onKeyDown} onFocus={() => {
+                        setRecommendCursor(-1);
+                    }}
+                           style={state ? {color: "dimgray"} : {color: "black"}}
+                    />
+                    <div className={"Kind"}>{state?"":kind}</div>
+
+                    <ol className={"ResultList"}>
+                        {state ? queryResult.map((result, idx) => {
+                                listRefs.push(_.cloneDeep(ref));
+                                return (<li key={idx} ref={listRefs[idx]}
+                                            className={idx === recommendCursor ? "selectedItem" : "notSelectedItem"}
+                                            onMouseOver={(e) => {
+                                                setRecommendCursor(idx);
+                                            }}
+                                            onClick={() => {
+                                                let find = listRefs[recommendCursor].current.innerText.split("\n")
+                                                setKeyword(find[0]);
+                                                setKind(find[1]);
+                                                setState(false);
+                                            }}
+                                >
+                                    <QueryResultListItem result={result}/>
+                                </li>)
+                            }
+                        ) : ""}
+                    </ol>
+                </div>
+                <div className={"InputBox"}>
+                    <span style={{borderBottom: "green 3px solid"}}>To</span>
+                    <input/>
+                </div>
             </div>
-
-            <div className={"InputBox"}>
-                <span style={{borderBottom: "green 3px solid"}}>To</span>
-                <input/>
-            </div>
-
         </div>
+        <div className={"ResultContainer"}></div>
     </div>)
 }
