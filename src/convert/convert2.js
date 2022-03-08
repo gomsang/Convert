@@ -55,8 +55,8 @@ export default function Convert() {
 
     return (<div className={"Convert"}>
         <div className={"Container"}>
+            <div className={"Title"}>Convert</div>
             <div className={"InputContainer"}>
-                <div className={"Title"}>Convert</div>
                 <div className={"InputBox"}>
                     <span style={{borderBottom: "orange 3px solid"}}>From</span>
 
@@ -95,6 +95,8 @@ export default function Convert() {
                 </div>
             </div>
         </div>
-        <div className={"ResultContainer"}></div>
+        <div className={"ResultContainer"}>
+            
+        </div>
     </div>)
 }
