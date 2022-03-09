@@ -1,10 +1,11 @@
-import "./Convert.css";
-import {useState, useEffect, useRef} from "react";
-import {querySizeByName} from "../utils/size/Size";
-import queryNameByList from "../utils/size/List";
-import getFlag from "../utils/size/Flag";
+import "./ConvertPage.css";
+import {useState, useEffect} from "react";
+import queryNameByList from "../../utils/size/List";
+import getFlag from "../../utils/size/Flag";
+import "./ConvertPage.css";
+import {querySizeByName} from "../../utils/size/Size";
 
-export default function Convert() {
+export default function ConvertPage() {
     const [state, setState] = useState(0)
     // 0 - 선택 가능 1 - 선택 중  2 - 선택 완료
 
@@ -80,7 +81,7 @@ export default function Convert() {
                        value={keyword} style={state < 2 ? {color: "dimgray"} : {color: "black"}}
                        onChange={keywordChange} onKeyDown={keyDown}
                 />
-                {state > 0 ? <img className={"Flag"} src={getFlag(queryResult[recommendCursor], kind,0)}
+                {state > 0 ? <img className={"Flag"} src={getFlag(queryResult[recommendCursor], kind, 0)}
                                   style={state < 2 ? {opacity: "0.5"} : {opacity: "1"}} alt={""}
                 /> : ""}
 
@@ -108,7 +109,7 @@ export default function Convert() {
                     }}
                            style={stateList < 2 ? {color: "dimgray"} : {color: "black"}}/>
 
-                    {<img className={"Flag"} src={getFlag(queryListReuslt[recommendCursorList].Country, "a | In",1)}
+                    {<img className={"Flag"} src={getFlag(queryListReuslt[recommendCursorList].Country, "a | In", 1)}
                           style={stateList < 2 ? {opacity: "0.5"} : {opacity: "1"}} alt={""}
                     />}
 
