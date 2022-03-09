@@ -1,9 +1,9 @@
-import "./Convert.css";
+import "./ConvertPage.css";
 import {useState, useEffect} from "react";
-import {querySizeByName} from "../utils/size/Size";
+import {querySizeByName} from "../../utils/size/Size";
 import {value} from "lodash/seq";
 
-export default function Convert() {
+export default function ConvertPage() {
     const [state, setState] = useState(0)
     // 0 - 선택 가능 1 - 선택 중  2 - 선택 완료
 
