@@ -48,6 +48,7 @@ export function querySizeByName(keyword) {
  * @param {string} kindId - kind id
  * @returns {string[]|undefined}
  */
+
 export function getRegionsInKind(kindId) {
     if (kinds.has(kindId)){
         let regions = Object.keys(kinds.get(kindId).data)

@@ -3,7 +3,7 @@
   "ranks": 6,
   "data": {
     "ko": {
-      "name": "Kor",
+      "name": "KR",
       "data": [
         {
           "rank": 0,
@@ -147,7 +147,7 @@
         }
       ]
     },"france": {
-      "name": "France",
+      "name": "FR",
       "data": [
         {
           "rank": 0,
