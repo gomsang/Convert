@@ -1,5 +1,6 @@
 import shoes from "../../utils/size/sources/kind_shoes.json"
 import clothes from "../../utils/size/sources/kind_clothes.json"
+import "./Table.css"
 
 function getSize(kind, country) {
     const Data = [shoes, clothes]
@@ -27,20 +28,24 @@ export default function Table(props) {
     const country1Result = getSize(kind, country1)
     const country2Result = getSize(kind, country2)
 
-
-    return (<table className={"Table"}>
-            <thead>
-            </thead>
-            <tbody>
-            <tr>
-                <th>{country1}</th>
-                {country1Result.map((value, i) => <td key={i}>{value}</td>)}
-            </tr>
-            <tr>
-                <th>{country2}</th>
-                {country2Result.map((value, i) => <td key={i}>{value}</td>)}
-            </tr>
-            </tbody>
-        </table>
+    return (<div className={"TableContainer"}>
+            <h1>{kind}</h1>
+            <table className={"Table"} border={1}>
+                <thead>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>{country1.toString().substring(0,2)}</th>
+                    {country1Result.map((value, i) => <td key={i}
+                                                          style={i.toString() === rank ? {backgroundColor: "papayawhip"} : {}}>{value}</td>)}
+                </tr>
+                <tr>
+                    <th>{country2.toString().substring(0,2)}</th>
+                    {country2Result.map((value, i) => <td key={i}
+                                                          style={i.toString() === rank ? {backgroundColor: "papayawhip"} : {}}>{value}</td>)}
+                </tr>
+                </tbody>
+            </table>
+        </div>
     )
 }

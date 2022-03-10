@@ -1,0 +1,35 @@
+.TableContainer {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    z-index: -1;
+}
+
+.TableContainer h1 {
+    margin: 0;
+    text-align: left;
+}
+
+.Table {
+    text-align: center;
+    border-collapse: collapse;
+    max-width: 100%;
+    min-width: 50%;
+}
+
+.Table tr{
+    display: flex;
+}
+
+
+.Table tr th {
+    width: 50px;
+    display: inline-block;
+    background-color: lightgray;
+}
+
+.Table tr td {
+    display: inline-block;
+    width: 60px;
+}
