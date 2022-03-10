@@ -32,5 +32,5 @@ export default function queryNameByList(value, kind) {
         }
     })
 
-    return res
+    return [res,valueRank]
 }
