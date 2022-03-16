@@ -45,7 +45,21 @@ export default function ConvertPage() {
     }
     //input keyDown event
 
+    const choose = (idx) => {
+        setRecommendCursor(idx)
+        setKeyword(values[idx])
+        setState(1)
+    }
 
+    const pick = () => {
+        setKind(kinds[recommendCursor])
+        let res = queryNameByList(values[recommendCursor], kinds[recommendCursor])
+        setRank(res[1])
+        setQueryListResult(res[0])
+        setState(2)
+        setRecommendCursor(-1)
+        setStateList(0)
+    }
 
     const [rank, setRank] = useState(-1)
 

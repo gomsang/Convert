@@ -37,7 +37,17 @@ export default function ConvertPage() {
     }, [keyword, state])
     // keyword와 state 될 때마다 query를 불러옴
 
-
+    const keyDown = (e) => {
+        if (values.length !== 0) {
+            if (e.code === "ArrowUp") {
+                choose((recommendCursor - 1) < 0 ? values.length - 1 : recommendCursor - 1)
+            } else if (e.code === "ArrowDown") {
+                choose((recommendCursor + 1) < values.length ? recommendCursor + 1 : 0)
+            } else if (e.code === "Enter") {
+                pick()
+            }
+        }
+    }
     //input keyDown event
 
     const choose = (idx) => {
