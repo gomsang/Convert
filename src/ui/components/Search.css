@@ -1,0 +1,18 @@
+.InputContainer {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    border-bottom: 4px solid black;
+    width: 180px;
+}
+
+.Input {
+    text-indent: 10px;
+    width: 180px;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0%);
+}

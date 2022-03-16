@@ -1,9 +1,9 @@
 import './App.css';
-import MainPage from "./ui/page/MainPage";
+import Convert from "./ui/components/Convert";
 
 
 function App() {
-    return (<MainPage/>);
+    return (<Convert/>);
 }
 
 export default App;

@@ -1,0 +1,24 @@
+.ResultList{
+    position: absolute;
+    list-style: none;
+    text-align: right;
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.ResultList li span{
+    font-size: 1.2rem;
+    border-radius: 3px;
+    padding: 0 3px 0 3px;
+    font-weight:300;
+}
+
+
+.selectedItem span{
+    background-color: black;
+    color: white;
+}

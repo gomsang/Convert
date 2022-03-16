@@ -1,16 +1,14 @@
 import "./ConvertPage.css";
 import {useState, useEffect, useRef} from "react";
-import queryNameByList from "../../utils/size/List";
-import getFlag from "../../utils/size/Flag";
+import queryNameByList from "../../../utils/size/List";
+import getFlag from "../../../utils/size/Flag";
 import "./ConvertPage.css";
-import {querySizeByName} from "../../utils/size/Size";
-import Table from "./Table";
+import {querySizeByName} from "../../../utils/size/Size";
+import Table from "../Table";
 
 export default function ConvertPage() {
     const [state, setState] = useState(0)
     // 0 - 선택 가능 1 - 선택 중  2 - 선택 완료
-
-    const listRef = useRef()
 
     const [queryResult, setQueryResult] = useState([])
     //query 결과 저장
@@ -39,17 +37,7 @@ export default function ConvertPage() {
     }, [keyword, state])
     // keyword와 state 될 때마다 query를 불러옴
 
-    const keyDown = (e) => {
-        if (values.length !== 0) {
-            if (e.code === "ArrowUp") {
-                choose((recommendCursor - 1) < 0 ? values.length - 1 : recommendCursor - 1)
-            } else if (e.code === "ArrowDown") {
-                choose((recommendCursor + 1) < values.length ? recommendCursor + 1 : 0)
-            } else if (e.code === "Enter") {
-                pick()
-            }
-        }
-    }
+
     //input keyDown event
 
     const choose = (idx) => {
