@@ -161,8 +161,6 @@ export default function ConvertPage() {
                 </div> : ""
             }
         </div>
-
         {stateList === 2 ? <Table rank={rank} kind={kind} kindList={kindList}/> : ""}
-
     </div>)
 }
