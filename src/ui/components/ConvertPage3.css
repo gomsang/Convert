@@ -1,20 +1,8 @@
 .Convert {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 50%;
-}
-
-.Container {
-    position: absolute;
-    display: flex;
-    top: 30%;
-    width: 100%;
-    justify-content: center;
 
 }
+
+
 
 .InputContainer {
     position: relative;

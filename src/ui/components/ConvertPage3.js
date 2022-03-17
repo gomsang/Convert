@@ -97,30 +97,7 @@ export default function ConvertPage() {
 
     return (<div className={"Convert"}>
         <div className={"Container"}>
-            <div
 
-                {state > 0 ? <img className={"Flag"} src={getFlag(queryResult[recommendCursor], kind, 0)}
-                                  style={state < 2 ? {opacity: "0.5"} : {opacity: "1"}} alt={""}
-                /> : ""}
-
-                {state === 2 ? <div className={"Kind"}>{kind}</div> : ""}
-                <ol className={"ResultList"}>
-                    {state < 2 ? queryResult.map((result, idx) => {
-                            values.push(result.name);
-                            kinds.push(result.kind + " | " + result.region)
-                            return (<li key={idx} className={idx === recommendCursor ? "selectedItem" : "notSelectedItem"}
-                                        onMouseOver={() => {
-                                            choose(idx)
-                                        }}
-                                        onClick={pick}
-                            ><span>{result.kind + " | " + result.region}</span>
-                            </li>)
-                        }
-                    ) : ""}
-                </ol>
-
-            </div>
-            {state === 2 ? <div className={"Arrow"}>≈</div> : ""}
             {state === 2 ?
                 <div className={"InputContainer"}>
                     <input className={"Input"} value={listResult} onKeyDown={keyDownList} onChange={() => {
