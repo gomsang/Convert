@@ -1,11 +1,11 @@
 import SearchList from "./SearchList";
-import "./Search.css";
+import "./styles/Search.css";
 import {useState} from "react";
 
 export default function Search({state, setState, setValue}) {
-    const [keyword, setKeyword] = useState("")
-    const [cursor, setCursor] = useState(0)
-    const [queryResult, setQueryResult] = useState([])
+    const [keyword, setKeyword] = useState("") //키워드
+    const [cursor, setCursor] = useState(0) //커서
+    const [queryResult, setQueryResult] = useState([]) //데이터 리스트
 
     const keyDown = (e) => {
         if (queryResult.length !== 0) {
@@ -38,7 +38,7 @@ export default function Search({state, setState, setValue}) {
     return <div className={"InputContainer"}>
         <input className={"Input"} placeholder={"값 입력"} value={keyword} onChange={change} onKeyDown={keyDown}
                style={state < 2 ? {color: "dimgray"} : {color: "black"}}/>
-        {state < 2 ? <SearchList keyword={keyword} setKeyword={setKeyword} cursor={cursor} setCursor={setCursor}
+        {state < 2 ? <SearchList keyword={keyword} cursor={cursor}
                                  queryResult={queryResult} setQueryResult={setQueryResult} state={state}
                                  choose={choose} pick={pick}/> : ""}
 

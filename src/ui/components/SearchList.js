@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {querySizeByName} from "../../utils/size/Size"
-import "./SearchList.css"
+import "./styles/SearchList.css"
 
 export default function SearchList({keyword, cursor, queryResult, setQueryResult, state, choose, pick}) {
     useEffect(() => {

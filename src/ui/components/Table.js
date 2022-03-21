@@ -1,6 +1,6 @@
 import shoes from "../../utils/size/sources/kind_shoes.json"
 import clothes from "../../utils/size/sources/kind_clothes.json"
-import "./Table.css"
+import "./styles/Table.css"
 
 function getSize(kind, country) {
     const Data = [shoes, clothes]
