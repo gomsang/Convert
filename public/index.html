@@ -16,10 +16,39 @@
             min-width: 320px;
             position: absolute;
         }
+        #root{
+            margin-top:50px;
+            position: relative;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
     </style>
+    <link rel="stylesheet" href="Nav.css"/>
+    <link rel="stylesheet" href="Footer.css"/>
     <title>ConvertPage</title>
 </head>
 <body>
-<div id="root"></div>
+
+<div id="nav" class="nav">
+    <a class="navTitle" href={"https://hufsdevelopers.org"}><span style="font-weight: bold">HUFS</span>Tools</a>
+    <button class="navApply">Apply</button>
+</div>
+<script>
+    const nav = document.getElementById("nav");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) nav.style.top = "-50px";
+        else nav.style.top = "0";
+    });
+</script>
+<div id="root">
+
+</div>
+<div class="Footer">
+    <pre style="text-align: center">
+        Copyright 2022. HUFS developers org. all rights reserved.
+    </pre>
+</div>
 </body>
 </html>

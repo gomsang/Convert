@@ -11,8 +11,6 @@ export default function Convert() {
     // 입력된 값을 저장하는 value
     const [final,setFinal] = useState({})
 
-    useEffect(()=>{console.log(value)},[value])
-    useEffect(()=>{console.log(final)},[final])
     return (<div className={"Main"}>
         <h1 className={"title"}>CONVERT</h1>
         <div className={"Container"}>

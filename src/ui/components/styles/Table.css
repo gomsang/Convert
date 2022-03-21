@@ -1,7 +1,7 @@
 .TableContainer {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    top: 65%;
     transform: translate(-50%, 0);
     z-index: -1;
 }

@@ -1,0 +1,45 @@
+.nav {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 10px lightgray;
+    transition: top 0.5s;
+}
+
+.navTitle {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+    font-size: 1rem;
+}
+
+.navApply {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translate(0, -50%);
+    /*위치 지정*/
+
+    border: none;
+    /*기본 속성 삭제*/
+
+    color: white;
+    background-color: rgba(0, 45, 86);
+    /*색상 지정*/
+
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.navApply:hover {
+    color: rgb(218, 218, 211);
+}
+
+.navApply:active {
+    color: rgb(157, 159, 162);
+}
