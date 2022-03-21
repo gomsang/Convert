@@ -2,47 +2,24 @@ import shoes from "../../utils/size/sources/kind_shoes.json"
 import clothes from "../../utils/size/sources/kind_clothes.json"
 import "./styles/Table.css"
 
-function getSize(kind, country) {
-    const Data = [shoes, clothes]
-    const idx = kind === "Shoes" ? 0 : 1
-    let result = []
-
-    Object.keys(Data[idx].data).forEach((key) => {
-        if (Data[idx].data[key].name === country) {
-            Data[idx].data[key].data.forEach((v) => {
-                result.push(v.name)
-            })
-        }
-    })
-
-    return result
-}
-
-export default function Table(props) {
-    const rank = props.rank
-    const temp = props.kind.split("|")
-    const kind = temp[0].replace(" ", "")
-    const country1 = temp[1].replace(" ", "")
-    const country2 = props.kindList
-
-    const country1Result = getSize(kind, country1)
-    const country2Result = getSize(kind, country2)
-
+export default function Table({value, final}) {
+    const Data = (value.kind === "Shoes" ? shoes : clothes)
+    console.log(final.rank)
     return (<div className={"TableContainer"}>
-            <h1>{kind}</h1>
+            <h1>{value.kind}</h1>
             <table className={"Table"} border={1}>
                 <thead>
                 </thead>
                 <tbody>
                 <tr>
-                    <th>{country1.toString().substring(0,2)}</th>
-                    {country1Result.map((value, i) => <td key={i}
-                                                          style={i.toString() === rank ? {backgroundColor: "papayawhip"} : {}}>{value}</td>)}
+                    <th>{value.region.toString().substring(0, 2)}</th>
+                    {Object.values(Data.data[value.regionKind].data).map((find, i) => <td key={i}
+                                                          style={i === value.rank ? {backgroundColor: "papayawhip"} : {}}>{find.name}</td>)}
                 </tr>
                 <tr>
-                    <th>{country2.toString().substring(0,2)}</th>
-                    {country2Result.map((value, i) => <td key={i}
-                                                          style={i.toString() === rank ? {backgroundColor: "papayawhip"} : {}}>{value}</td>)}
+                    <th>{final.region.toString().substring(0, 2)}</th>
+                    {Object.values(Data.data[final.regionKind].data).map((find, i) => <td key={i}
+                                                          style={i === final.rank ? {backgroundColor: "papayawhip"} : {}}>{find.name}</td>)}
                 </tr>
                 </tbody>
             </table>

@@ -22,3 +22,8 @@
     background-color: black;
     color: white;
 }
+
+.Down{
+    position: relative;
+    right: 10px;
+}

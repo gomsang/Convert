@@ -32,6 +32,7 @@ export function querySizeByName(keyword) {
                 if (keyword !== "" && (data.name.indexOf(keyword) === 0)) {
                     result.push({
                         kind: kind.id,
+                        regionKind: key,
                         region: kind.data[key].name,
                         rank: data.rank,
                         name: data.name
