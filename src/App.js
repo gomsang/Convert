@@ -1,5 +1,5 @@
 import './App.css';
-import MainPage from "./ui/page/MainPage";
+import ConvertPage from "./ui/page/ConvertPage";
 
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -7,7 +7,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<MainPage/>}/>
+                <Route path="/" element={<ConvertPage/>}/>
             </Routes>
         </BrowserRouter>
     );

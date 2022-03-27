@@ -1,0 +1,15 @@
+.headerLayout {
+    padding: 6rem 6rem;
+}
+
+.siteTitle {
+    display: inline;
+    color: black;
+    font-size: 3rem;
+}
+
+.subTitle {
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    display: inline;
+}

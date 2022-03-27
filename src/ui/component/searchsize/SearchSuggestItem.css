@@ -1,0 +1,18 @@
+.suggest, .focusedSuggest {
+    font-size: 1.6rem;
+    text-align: right;
+    padding: 1rem 1.6rem 1rem 0;
+    position: relative;
+    border-radius: 1.6em;
+}
+
+/*.suggest:hover,*/ .focusedSuggest {
+    color: white;
+    background-color: black;
+}
+
+.name {
+    position: absolute;
+    left: 1.6rem;
+    font-weight: bold;
+}

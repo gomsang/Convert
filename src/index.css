@@ -1,4 +1,5 @@
 html, body {
+  font-size: 62.5%;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -12,8 +13,7 @@ html, body {
   /*폰트는 나중에 변경해야함*/
 }
 
-#root{
+#root {
   width: 100%;
   height: 100%;
 }
-
