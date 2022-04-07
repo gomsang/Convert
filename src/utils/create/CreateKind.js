@@ -29,7 +29,8 @@ const parser = parse({delimiter: ","}, function (err, data) {
     console.log(JSON.stringify(convertedData, null, 4))
 
     fs.writeFile('export.json', JSON.stringify(convertedData, null, 4), 'utf-8', (err) => {
-        console.log(err)
+        if (err)
+            console.log(err)
     })
 })
 
