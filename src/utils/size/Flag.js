@@ -45,4 +45,3 @@ export default function getFlag(kind, selectKind, i) {
 
     return choose[idx]
 }
-

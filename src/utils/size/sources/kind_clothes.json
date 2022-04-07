@@ -1,6 +1,6 @@
 {
-  "id": "Clothes",
-  "ranks": 6,
+  "id": "clothes",
+  "total": 6,
   "data": {
     "ko": {
       "name": "KR",
@@ -146,7 +146,8 @@
           "name": "5"
         }
       ]
-    },"france": {
+    },
+    "france": {
       "name": "FR",
       "data": [
         {

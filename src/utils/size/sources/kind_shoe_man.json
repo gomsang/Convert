@@ -1,0 +1,32 @@
+{
+  "id": "shoe_man",
+  "name": "Shoe(Man)",
+  "rank_min": 0,
+  "rank_max": 14,
+  "data": [
+    {
+      "id": "shoe_man_kr",
+      "name": "Korean",
+      "data": [
+        {
+          "rank": 0,
+          "name": "240"
+        },
+        {
+          "rank": 0,
+          "name": "245"
+        },
+        {
+          "rank": 0,
+          "name": "250"
+        },
+        {
+          "rank": 0,
+          "name": ""
+        }
+      ]
+    },
+    {},
+    {}
+  ]
+}
